@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/vikram/Documents/Development/Libraries/Vikram/DroidCalendarView/DCView/src/main/jniLibs"/></dataSet><dataSet config="release"><source path="/Users/vikram/Documents/Development/Libraries/Vikram/DroidCalendarView/DCView/src/release/jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Users\admin\Desktop\AndroidProjectCerebrik\DroidCalendar\DCView\src\main\jniLibs"/></dataSet><dataSet config="release"><source path="C:\Users\admin\Desktop\AndroidProjectCerebrik\DroidCalendar\DCView\src\release\jniLibs"/></dataSet></merger>

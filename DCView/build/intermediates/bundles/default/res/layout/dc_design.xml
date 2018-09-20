@@ -58,6 +58,6 @@
         android:horizontalSpacing="0dp"
         android:gravity="center"
         android:numColumns="@string/dc_columns"
-        android:stretchMode="columnWidth"
-        android:background="@android:color/white"/>
+        android:background="#f4f4f4"
+        android:stretchMode="columnWidth"/>
 </LinearLayout>

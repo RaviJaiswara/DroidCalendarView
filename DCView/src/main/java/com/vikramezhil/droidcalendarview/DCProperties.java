@@ -42,17 +42,20 @@ class DCProperties
 
     int daysHeadersLayoutBGColor = Color.parseColor("#F5F5F5");
 
-    int daysHeadersTextColor = Color.parseColor("#999898");
+    int daysHeadersTextColor = Color.parseColor("#494949");
 
-    int daysLayoutBGColor = Color.WHITE;
+    /*int daysLayoutBGColor = Color.WHITE;*/
+    int daysLayoutBGColor = Color.parseColor("#f4f4f4");
+    //int daysTextColor = Color.parseColor("#999898");
 
-    int daysTextColor = Color.parseColor("#999898");
+    int daysTextColor = Color.parseColor("#494949");
 
     int daysSubTextColor = Color.parseColor("#999898");
 
-    int clickableDaysBGColor = Color.WHITE;
+    /*int clickableDaysBGColor = Color.WHITE;*/
+    int clickableDaysBGColor = Color.parseColor("#f4f4f4");
 
-    int clickableDaysTextColor = Color.parseColor("#999898");
+    int clickableDaysTextColor = Color.parseColor("#494949");
 
     int clickedDayBGColor = Color.parseColor("#00ADEF");
 
@@ -60,9 +63,12 @@ class DCProperties
 
     int clickedDaySubTextColor = Color.WHITE;
 
-    int colSeparatorColor = Color.parseColor("#F5F5F5");
+    //    int colSeparatorColor = Color.parseColor("#F5F5F5");
+    int colSeparatorColor = Color.parseColor("#494949");
 
-    int rowSeparatorColor = Color.parseColor("#F5F5F5");
+
+    //    int rowSeparatorColor = Color.parseColor("#F5F5F5");
+    int rowSeparatorColor = Color.parseColor("#494949");
 
     int horizontalSwipeAnimation = R.anim.anim_fadein;
 
@@ -78,9 +84,9 @@ class DCProperties
 
     boolean showDaysHeaderColSeparator = false;
 
-    boolean showDaysHeaderRowSeparator = false;
+    boolean showDaysHeaderRowSeparator = true;
 
-    boolean showColSeparator = false;
+    boolean showColSeparator = true;
 
     boolean showRowSeparator = true;
 

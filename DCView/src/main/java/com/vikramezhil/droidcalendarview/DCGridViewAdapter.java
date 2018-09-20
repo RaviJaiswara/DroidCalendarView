@@ -17,7 +17,7 @@ import java.util.Locale;
  * @author Vikram Ezhil
  */
 
-class DCGridViewAdapter extends BaseAdapter 
+class DCGridViewAdapter extends BaseAdapter
 {
     private Context context;
     private DCData dcData;
@@ -58,7 +58,7 @@ class DCGridViewAdapter extends BaseAdapter
      *
      * @param dcData The droid calendar data
      */
-    void setDcData(DCData dcData) 
+    void setDcData(DCData dcData)
     {
         this.dcData = dcData;
 

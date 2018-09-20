@@ -3,12 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="/Users/vikram/Documents/Development/Libraries/Vikram/DroidCalendarView/DCView/build/intermediates/bundles/default/classes.jar"
+        jar="C:\Users\admin\Desktop\AndroidProjectCerebrik\DroidCalendar\DCView\build\intermediates\bundles\default\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.1"
-        sha1="ae8b39c781194de691776d8d1030b74a0ea947fb">
-        <dex dex="/Users/vikram/Documents/Development/Libraries/Vikram/DroidCalendarView/app/build/intermediates/pre-dexed/debug/classes_6b07f59616d7b3e1097966215acb8d779521dc04.jar" />
+        sha1="e7aa8c4dcb704a34461e19630993a27d6cd85e29">
+        <dex dex="C:\Users\admin\Desktop\AndroidProjectCerebrik\DroidCalendar\app\build\intermediates\pre-dexed\debug\classes_5e5fb14e719d63bc7e1b1432f3d90116ed5af695.jar" />
     </item>
 
 </items>

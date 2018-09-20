@@ -4,8 +4,16 @@
         "source": "C:\\Users\\admin\\Desktop\\AndroidProjectCerebrik\\DroidCalendar\\DCView\\build\\intermediates\\bundles\\default\\res\\layout\\dc_gv_date.xml"
     },
     {
-        "merged": "C:\\Users\\vikram\\Documents\\Development\\Libraries\\Vikram\\DroidCalendarView\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dc_gv_date.xml",
-        "source": "C:\\Users\\vikram\\Documents\\Development\\Libraries\\Vikram\\DroidCalendarView\\DCView\\build\\intermediates\\bundles\\default\\res\\layout\\dc_gv_date.xml"
+        "merged": "C:\\Users\\vikram\\Documents\\Development\\Libraries\\Vikram\\DroidCalendarView\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dc.xml",
+        "source": "C:\\Users\\vikram\\Documents\\Development\\Libraries\\Vikram\\DroidCalendarView\\DCView\\build\\intermediates\\bundles\\default\\res\\layout\\dc.xml"
+    },
+    {
+        "merged": "C:\\Users\\vikram\\Documents\\Development\\Libraries\\Vikram\\DroidCalendarView\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dc_design.xml",
+        "source": "C:\\Users\\vikram\\Documents\\Development\\Libraries\\Vikram\\DroidCalendarView\\DCView\\build\\intermediates\\bundles\\default\\res\\layout\\dc_design.xml"
+    },
+    {
+        "merged": "C:\\Users\\vikram\\Documents\\Development\\Libraries\\Vikram\\DroidCalendarView\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dc.xml",
+        "source": "C:\\Users\\vikram\\Documents\\Development\\Libraries\\Vikram\\DroidCalendarView\\app\\src\\main\\res\\layout\\activity_dc.xml"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\AndroidProjectCerebrik\\DroidCalendar\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dc.xml",
@@ -16,19 +24,11 @@
         "source": "C:\\Users\\admin\\Desktop\\AndroidProjectCerebrik\\DroidCalendar\\DCView\\build\\intermediates\\bundles\\default\\res\\layout\\dc_design.xml"
     },
     {
-        "merged": "C:\\Users\\vikram\\Documents\\Development\\Libraries\\Vikram\\DroidCalendarView\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dc_design.xml",
-        "source": "C:\\Users\\vikram\\Documents\\Development\\Libraries\\Vikram\\DroidCalendarView\\DCView\\build\\intermediates\\bundles\\default\\res\\layout\\dc_design.xml"
-    },
-    {
-        "merged": "C:\\Users\\vikram\\Documents\\Development\\Libraries\\Vikram\\DroidCalendarView\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dc.xml",
-        "source": "C:\\Users\\vikram\\Documents\\Development\\Libraries\\Vikram\\DroidCalendarView\\DCView\\build\\intermediates\\bundles\\default\\res\\layout\\dc.xml"
+        "merged": "C:\\Users\\vikram\\Documents\\Development\\Libraries\\Vikram\\DroidCalendarView\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dc_gv_date.xml",
+        "source": "C:\\Users\\vikram\\Documents\\Development\\Libraries\\Vikram\\DroidCalendarView\\DCView\\build\\intermediates\\bundles\\default\\res\\layout\\dc_gv_date.xml"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\AndroidProjectCerebrik\\DroidCalendar\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dc.xml",
         "source": "C:\\Users\\admin\\Desktop\\AndroidProjectCerebrik\\DroidCalendar\\DCView\\build\\intermediates\\bundles\\default\\res\\layout\\dc.xml"
-    },
-    {
-        "merged": "C:\\Users\\vikram\\Documents\\Development\\Libraries\\Vikram\\DroidCalendarView\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dc.xml",
-        "source": "C:\\Users\\vikram\\Documents\\Development\\Libraries\\Vikram\\DroidCalendarView\\app\\src\\main\\res\\layout\\activity_dc.xml"
     }
 ]

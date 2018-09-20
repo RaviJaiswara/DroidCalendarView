@@ -34,7 +34,8 @@ public class ActivityDC extends Activity
         setContentView(R.layout.activity_dc);
 
         final DCView dcView = findViewById(R.id.dcView);
-        final int calendarDataPos = (new Random()).nextInt(50);
+//        final int calendarDataPos = (new Random()).nextInt(50);
+        final int calendarDataPos = 12;
         if(calendarDataPos % 2 == 0)
         {
             dcView.setDCData(12, MY_FORMAT, D_FORMAT, true, Locale.US);
@@ -56,7 +57,7 @@ public class ActivityDC extends Activity
         }
 
         dcView.setDCExpanded(true);
-        dcView.setDCHeaderTextSize(22f);
+        dcView.setDCHeaderTextSize(60f);
         dcView.setDCDaysHeaderTextSize(20f);
         dcView.setDCDaysTextSize(20f);
         dcView.setDCDaysSubTextSize(12f);
@@ -75,7 +76,8 @@ public class ActivityDC extends Activity
                 int[] primaryColors = new int[]{Color.parseColor("#673AB7"), Color.parseColor("#00BCD4"), Color.parseColor("#4CAF50"), Color.parseColor("#9C27B0")};
                 int[] secondaryColors = new int[]{Color.parseColor("#D1C4E9"), Color.parseColor("#B2EBF2"), Color.parseColor("#C8E6C9"), Color.parseColor("#E1BEE7")};
                 int[] contrastColors = new int[]{Color.WHITE, Color.WHITE, Color.WHITE, Color.WHITE};
-                int randomPos = (new Random()).nextInt(primaryColors.length);
+//                int randomPos = (new Random()).nextInt(primaryColors.length);
+                int randomPos = 0;
                 if(randomPos < primaryColors.length)
                 {
                     if(calendarDataPos % 2 == 0)
@@ -116,7 +118,8 @@ public class ActivityDC extends Activity
                         dcView.setDCShowColSeparator(randomPos % 2 == 0);
                         dcView.setDCShowRowSeparator(randomPos % 2 == 0);
 
-                        int randomClearSubValues = (new Random()).nextInt(primaryColors.length);
+//                        int randomClearSubValues = (new Random()).nextInt(primaryColors.length);
+                        int randomClearSubValues = 0;
                         if(randomClearSubValues % 2 == 0)
                         {
                             // Clearing out the dates sub data if applicable
@@ -127,8 +130,8 @@ public class ActivityDC extends Activity
                         {
                             for(String date: calendarDatesWithPastPresentFuture)
                             {
-                                int randomCalories = (new Random()).nextInt(2500);
-
+//                                int randomCalories = (new Random()).nextInt(2500);
+                                int randomCalories = 12;
                                 // Setting the dates sub data
                                 dcView.setDCDatesSubData(calendarPosition, date, randomCalories + " kcal");
                             }
