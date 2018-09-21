@@ -27,6 +27,7 @@ public final class R {
     public static final class drawable {
         public static int ripple_date_selector=0x7f020000;
         public static int ripple_month_selector=0x7f020001;
+        public static int rounded_dark_gray_border=0x7f020002;
     }
     public static final class id {
         public static int dcChildLayout=0x7f080008;

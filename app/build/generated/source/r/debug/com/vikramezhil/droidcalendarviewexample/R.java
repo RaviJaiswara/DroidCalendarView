@@ -30,6 +30,7 @@ public final class R {
     public static final class drawable {
         public static final int ripple_date_selector=0x7f020000;
         public static final int ripple_month_selector=0x7f020001;
+        public static final int rounded_dark_gray_border=0x7f020002;
     }
     public static final class id {
         public static final int dcChildLayout=0x7f0a0009;
@@ -63,8 +64,6 @@ public final class R {
         public static final int fa_previous=0x7f080003;
     }
     public static final class style {
-        /**  Customize your theme here. 
-         */
         public static final int AppTheme=0x7f090000;
     }
 }

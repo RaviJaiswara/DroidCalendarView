@@ -23,6 +23,7 @@ class DCGridViewAdapter extends BaseAdapter
     private DCData dcData;
     private DCProperties dcProperties;
     private OnDCDatesListener onDCDatesListener;
+    boolean showDateInRedColorOnSun = false;
 
     // MARK: View Holder Class
 
@@ -130,14 +131,21 @@ class DCGridViewAdapter extends BaseAdapter
             // Setting the tag position
             holder.dcChildLayout.setTag(position);
 
+            // Condition for getting sunday gridView position
+            if (position==0 || position % 7 == 0){
+                showDateInRedColorOnSun = true;
+            }else {
+                showDateInRedColorOnSun = false;
+            }
+
             // Setting the view properties
 
             holder.dcChildLayout.setAlpha(1f);
             holder.dcColSeparator.setBackgroundColor(dcProperties.colSeparatorColor);
             holder.dcRowSeparator.setBackgroundColor(dcProperties.rowSeparatorColor);
 
-            if(position < DCFormats.DAYS_IN_A_WEEK.length)
-            {
+
+            if(position < DCFormats.DAYS_IN_A_WEEK.length && showDateInRedColorOnSun == false) {
                 // Days headers
 
                 holder.dcColSeparator.setVisibility(dcProperties.showDaysHeaderColSeparator ? View.VISIBLE : View.GONE);
@@ -149,6 +157,19 @@ class DCGridViewAdapter extends BaseAdapter
                 holder.dcParentLayout.setBackgroundColor(dcProperties.daysHeadersLayoutBGColor);
                 holder.dcChildLayout.setBackgroundColor(Color.TRANSPARENT);
                 holder.dcDayValue.setTextColor(dcProperties.daysHeadersTextColor);
+                holder.dcDayValue.setTextSize(dcProperties.daysHeaderTextSize);
+                holder.dcDayValue.setTypeface(null, dcProperties.daysHeaderTextStyle);
+            }
+            else if (position < DCFormats.DAYS_IN_A_WEEK.length && showDateInRedColorOnSun == true){
+                holder.dcColSeparator.setVisibility(dcProperties.showDaysHeaderColSeparator ? View.VISIBLE : View.GONE);
+                holder.dcRowSeparator.setVisibility(dcProperties.showDaysHeaderRowSeparator ? View.VISIBLE : View.INVISIBLE);
+                holder.dcDaySubValue.setVisibility(View.GONE);
+                holder.dcDayValue.setText(DCUtil.getDateInFormat(DCFormats.DAYS_IN_A_WEEK[position], DCFormats.DC_EEEE_FORMAT, DCFormats.DC_EEE_FORMAT, Locale.US, dcData.locale).replace(".", ""));
+                holder.dcChildLayout.setEnabled(false);
+                holder.dcChildLayout.setOnClickListener(null);
+                holder.dcParentLayout.setBackgroundColor(dcProperties.daysHeadersLayoutBGColor);
+                holder.dcChildLayout.setBackgroundColor(Color.TRANSPARENT);
+                holder.dcDayValue.setTextColor(dcProperties.showDateColorInRed);
                 holder.dcDayValue.setTextSize(dcProperties.daysHeaderTextSize);
                 holder.dcDayValue.setTypeface(null, dcProperties.daysHeaderTextStyle);
             }
@@ -204,8 +225,7 @@ class DCGridViewAdapter extends BaseAdapter
                                 holder.dcDayValue.setTextColor(dcProperties.daysTextColor);
                                 holder.dcDaySubValue.setTextColor(dcProperties.daysSubTextColor);
                             }
-                            else
-                            {
+                            else {
                                 holder.dcDayValue.setText("");
                                 holder.dcDaySubValue.setVisibility(dcProperties.showDaySubValue ? View.INVISIBLE : View.GONE);
                                 holder.dcChildLayout.setEnabled(false);
@@ -260,6 +280,10 @@ class DCGridViewAdapter extends BaseAdapter
                                     holder.dcChildLayout.setBackgroundColor(dcProperties.daysLayoutBGColor);
                                     holder.dcDayValue.setTextColor(dcProperties.daysTextColor);
                                     holder.dcDaySubValue.setTextColor(dcProperties.daysSubTextColor);
+                                }else if (showDateInRedColorOnSun == true){
+                                    holder.dcChildLayout.setBackgroundColor(dcProperties.clickableDaysBGColor);
+                                    holder.dcDayValue.setTextColor(dcProperties.showDateColorInRed);
+                                    holder.dcDaySubValue.setTextColor(dcProperties.clickableDaysTextColor);
                                 }
                                 else
                                 {
@@ -268,14 +292,12 @@ class DCGridViewAdapter extends BaseAdapter
                                     holder.dcDaySubValue.setTextColor(dcProperties.clickableDaysTextColor);
                                 }
                             }
-                            else if(dcProperties.clickableDates.contains(date))
-                            {
+                            else if(dcProperties.clickableDates.contains(date)) {
                                 holder.dcChildLayout.setBackgroundColor(dcProperties.clickableDaysBGColor);
                                 holder.dcDayValue.setTextColor(dcProperties.clickableDaysTextColor);
                                 holder.dcDaySubValue.setTextColor(dcProperties.clickableDaysTextColor);
                             }
-                            else
-                            {
+                            else {
                                 holder.dcChildLayout.setBackgroundColor(Color.TRANSPARENT);
                                 holder.dcChildLayout.setBackgroundColor(dcProperties.daysLayoutBGColor);
                                 holder.dcDayValue.setTextColor(dcProperties.daysTextColor);

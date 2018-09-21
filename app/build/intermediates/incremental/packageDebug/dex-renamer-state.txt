@@ -1,4 +1,4 @@
-#Thu Sep 20 18:27:22 IST 2018
+#Fri Sep 21 19:38:21 IST 2018
 base.0=C\:\\Users\\admin\\Desktop\\AndroidProjectCerebrik\\DroidCalendar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
 file.0=C\:\\Users\\admin\\Desktop\\AndroidProjectCerebrik\\DroidCalendar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

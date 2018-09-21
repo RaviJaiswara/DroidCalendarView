@@ -351,8 +351,23 @@ public class DCView extends LinearLayout implements OnDCDatesListener
             DateTime startDate = dateTimeFormatter.parseDateTime(datesToBeRecalibrate.get(0));
             DateTime endDate = dateTimeFormatter.parseDateTime(datesToBeRecalibrate.get(datesToBeRecalibrate.size() - 1));
 
-            int startWeekPos = startDate.getDayOfWeek();
-            int endWeekPos = endDate.getDayOfWeek();
+            int start = startDate.getDayOfWeek();
+            int startWeekPos = 0,endWeekPos=0;
+
+            //Condition for setting Sunday before monday
+             if (start == 7){
+                 startWeekPos = 1;
+             }else {
+                 startWeekPos = start + 1;
+             }
+            int end = endDate.getDayOfWeek();
+
+             //Condition for setting Sunday before monday
+             if (end == 7){
+                 endWeekPos = 1;
+             } else {
+                 endWeekPos = end + 1;
+             }
             for(int catx=0;catx<startWeekPos - 1;catx++)
             {
                 // Adding empty data before the start date if applicable
@@ -387,7 +402,7 @@ public class DCView extends LinearLayout implements OnDCDatesListener
                 // recalibrateDatesList.add(null);
 
                 // Adding dates from next month if applicable
-                recalibrateDatesList.add(DCUtil.getNextDate(recalibrateDatesList.get(recalibrateDatesList.size() - 1), dateFormat, locale));
+                recalibrateDatesList.add(DCUtil.getNextDate(recalibrateDatesList.get(recalibrateDatesList.size()-1), dateFormat, locale));
             }
         }
 

@@ -59,6 +59,8 @@ class DCProperties
 
     int clickedDayBGColor = Color.parseColor("#00ADEF");
 
+    int showDateColorInRed = Color.parseColor("#ff0000");
+
     int clickedDayTextColor = Color.WHITE;
 
     int clickedDaySubTextColor = Color.WHITE;

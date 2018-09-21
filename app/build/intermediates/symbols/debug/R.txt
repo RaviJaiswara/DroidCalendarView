@@ -11,6 +11,7 @@ int dimen dc_month_button_padding 0x7f070002
 int dimen dc_separator_line_height 0x7f070003
 int drawable ripple_date_selector 0x7f020000
 int drawable ripple_month_selector 0x7f020001
+int drawable rounded_dark_gray_border 0x7f020002
 int id dcChildLayout 0x7f0a0009
 int id dcColSeparator 0x7f0a0008
 int id dcDaySubValue 0x7f0a000b

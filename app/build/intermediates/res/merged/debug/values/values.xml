@@ -3,7 +3,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="dc_month_header_bg">#0066B4</color>
+    <color name="dc_month_header_bg">#494949</color>
     <color name="dc_row_separator">#F5F5F5</color>
     <color name="ripple_select_color">#eee7e7</color>
     <dimen name="dc_grid_column_width">90dp</dimen>
@@ -15,6 +15,6 @@
     <string name="fa_next"></string>
     <string name="fa_previous"></string>
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+        
     </style>
 </resources>

@@ -8,7 +8,7 @@ package com.vikramezhil.droidcalendarview;
 
 class DCFormats
 {
-    static final String[] DAYS_IN_A_WEEK = new String[]{"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+    static final String[] DAYS_IN_A_WEEK = new String[]{ "Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
     static final String DC_DMY_FORMAT = "d/M/YYYY";
     static final String DC_MY_FORMAT = "MMMM YYYY";
     static final String D_FORMAT = "d";
