@@ -17,14 +17,11 @@
 
         <TextView
             android:id="@+id/previous"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:padding="@dimen/dc_month_button_padding"
             android:gravity="center"
-            android:text="@string/fa_previous"
-            android:textColor="@android:color/white"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:background="@drawable/ripple_month_selector"/>
+            android:background="@drawable/btn_left_for_calendar"/>
 
         <TextView
             android:id="@+id/dcHeader"
@@ -40,14 +37,11 @@
 
         <TextView
             android:id="@+id/next"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:padding="@dimen/dc_month_button_padding"
             android:gravity="center"
-            android:text="@string/fa_next"
-            android:textColor="@android:color/white"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:background="@drawable/ripple_month_selector"/>
+            android:background="@drawable/btn_right_for_calendar"/>
     </LinearLayout>
 
     <com.vikramezhil.droidcalendarview.DCGridView

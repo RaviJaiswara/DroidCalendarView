@@ -44,7 +44,7 @@ public class ActivityDC extends Activity
             dcView.setDCEnableHorizontalSwipe(true);
             dcView.setDCEnableVerticalSwipe(true);
             dcView.setDCShowSwipeAnimation(true);
-            dcView.setShowPrevAndNextButtons(false);
+            dcView.setShowPrevAndNextButtons(true);
         }
         else
         {

@@ -16,23 +16,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@android:color/white">
+        android:background="#f4f4f4">
 
         <LinearLayout
             android:id="@+id/dcChildLayout"
             android:layout_width="match_parent"
             android:layout_height="?android:attr/actionBarSize"
             android:gravity="center"
-            android:layout_margin="@dimen/dc_margin"
-            android:orientation="vertical"
-            android:background="@drawable/ripple_date_selector">
-
+            android:orientation="vertical">
             <TextView
                 android:id="@+id/dcDayValue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:maxLines="1"
+                android:textStyle="bold"
                 android:text="@string/app_name"
                 android:textColor="@android:color/black"
                 android:textAppearance="?android:attr/textAppearanceMedium"/>
@@ -51,8 +49,6 @@
             android:id="@+id/dcRowSeparator"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dc_separator_line_height"
-            android:layout_marginTop="@dimen/dc_margin"
-            android:layout_marginBottom="@dimen/dc_margin"
             android:background="@color/dc_row_separator"/>
     </LinearLayout>
 </LinearLayout>
